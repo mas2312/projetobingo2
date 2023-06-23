@@ -23,7 +23,8 @@ public class Main {
             System.out.println("6. Gestão Financeira");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
-
+            
+            try{
             int opcao = scanner.nextInt();
             scanner.nextLine(); // Limpa o buffer do scanner
 
@@ -84,6 +85,10 @@ public class Main {
                     System.out.println("Opção inválida.");
                     break;
             }
-        }
+        }catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+            scanner.nextLine();
+            }  
+        }    
     }
 }
