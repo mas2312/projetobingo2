@@ -89,6 +89,7 @@ public class Main {
             System.out.println("Erro: " + e.getMessage());
             scanner.nextLine();
             }  
+             System.out.println("Digite opção de 0 a 6.");
         }    
     }
 }
